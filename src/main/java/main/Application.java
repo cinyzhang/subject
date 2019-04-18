@@ -3,7 +3,7 @@ package main;
 public class Application {
     public static void main(String[] args) {
         if(args.length == 0){
-            System.out.println("Usage: java -jar 包名.类名 [程序参数]");
+            System.out.println("Usage: java -jar jar包 包名.类名 [程序参数]");
             System.exit(-1);
         }
         try {
