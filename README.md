@@ -1,3 +1,4 @@
+本项目目的是为了检查kafka和hbase的读写性能测试
 # kafka 读测试
 `java -jar subject-1.0.jar test.kafka.KafkaCustomerTest_010 [zookeeper-connect]  [topic]`
 ###### 参数说明： zookeeper-connect以，分割 
