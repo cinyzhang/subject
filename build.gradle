@@ -25,8 +25,12 @@ dependencies {
     // https://mvnrepository.com/artifact/com.xiaoleilu/hutool
     compile group: 'com.xiaoleilu', name: 'hutool', version: '2.16.2'
     compile group: 'org.apache.hbase', name: 'hbase-client', version: '0.99.2'
-    compile group: 'org.apache.kafka', name: 'kafka-clients', version: '2.2.0'
-    compile group: 'org.apache.kafka', name: 'kafka_2.11', version: '2.2.0'
+    // https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients
+    compile group: 'org.apache.kafka', name: 'kafka-clients', version: '0.8.2.1'
+    compile group: 'org.apache.kafka', name: 'kafka_2.11', version: '0.8.2.1'
+    //compile group: 'org.apache.kafka', name: 'kafka-clients', version: '0.10.1.1'
+    //compile group: 'org.apache.kafka', name: 'kafka-clients', version: '2.2.0'
+    // compile group: 'org.apache.kafka', name: 'kafka_2.11', version: '2.2.0'
 }
 
 jar {

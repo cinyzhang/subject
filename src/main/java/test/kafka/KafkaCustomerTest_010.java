@@ -9,7 +9,7 @@ import java.util.Properties;
 /**
  * kafka 消费测试
  */
-public class KafkaCustomerTest implements ISubject {
+/*public class KafkaCustomerTest_010 implements ISubject {
 
     private static final String group = "group-1";
 
@@ -49,10 +49,10 @@ public class KafkaCustomerTest implements ISubject {
                 }
             }
         }else{
-            System.out.println("KafkaCustomerTest Usage: "+
+            System.out.println("KafkaCustomerTest_010 Usage: "+
                     "[bootstrap-server]  [topic]"
             );
             System.exit(-3);
         }
     }
-}
+}*/

@@ -13,7 +13,7 @@ import java.util.Properties;
 /**
  * kafka 生产测试
  */
-public class kafkaProducerTest implements ISubject {
+/*public class kafkaProducerTest_010 implements ISubject {
 
     private static  KafkaProducer<String, String> createProducer(String bootstrapServers){
         Properties props = new Properties();
@@ -47,4 +47,4 @@ public class kafkaProducerTest implements ISubject {
             System.exit(-2);
         }
     }
-}
+}*/
