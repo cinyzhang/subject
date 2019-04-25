@@ -1,0 +1,8 @@
+#清除hdfs上的测试数据集和结果
+hadoop jar /usr/hdp/3.1.0.0-78/hadoop-mapreduce/hadoop-mapreduce-client-jobclient-tests.jar TestDFSIO -clean
+#往hdfs写10个100m的文件
+hadoop jar /usr/hdp/3.1.0.0-78/hadoop-mapreduce/hadoop-mapreduce-client-jobclient-tests.jar TestDFSIO  -write  -nrFiles 10  -fileSize 100MB -resFile  /tmp/DFSIO-write.out
+#从hdfs读10个100m的文件
+hadoop jar /usr/hdp/3.1.0.0-78/hadoop-mapreduce/hadoop-mapreduce-client-jobclient-tests.jar TestDFSIO   -read  -nrFiles 10  -fileSize 100MB -resFile  /tmp/DFSIO-read.out
+#查看hdfs的测试数据集和结果
+hadoop  fs -ls  /benchmarks/TestDFSIO
