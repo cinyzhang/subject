@@ -28,8 +28,9 @@ public class HBaseTest implements ISubject {
 	static Configuration config = null;
 	static {
 		config = HBaseConfiguration.create();// 配置
-		//config.set("hbase.zookeeper.quorum", "master1ha,master2,master2ha");// zookeeper地址
-		//config.set("hbase.zookeeper.property.clientPort", "2181");// zookeeper端口
+//		config.set("hbase.zookeeper.quorum", "10.1.1.1,10.1.1.2,10.1.1.3,10.1.1.6,10.1.1.7");// zookeeper地址
+//		config.set("hbase.zookeeper.property.clientPort", "2181");// zookeeper端口
+//        config.set("hbase.master","10.1.1.1");
 	}
 
 	/**
@@ -83,7 +84,7 @@ public class HBaseTest implements ISubject {
 			if (!admin.tableExists(strTableName)) {
 				System.out.println(strTableName + "表不存在！");
 			} else {
-				//admin.disableTable(strTableName);
+				admin.disableTable(strTableName);
 				admin.deleteTable(strTableName);
 				System.out.println(strTableName + "表删除成功！");
 			}
